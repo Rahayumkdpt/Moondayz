@@ -4,4 +4,4 @@ import Menu from './Menu';
 import Female from './Female';
 //import Home from './Home';
 
-export {SplashScreen, Menu};
+export {SplashScreen, Menu, Female};

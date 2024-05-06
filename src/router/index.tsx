@@ -8,22 +8,21 @@ const index = () => {
   return (
     <Stack.Navigator>
       <Stack.Screen
-        name="Menu"
-        component={Menu}
-        options={{headerShown: false}}
-      />
-      <Stack.Screen
         name="SplashScreen"
         component={SplashScreen}
         options={{headerShown: false}}
       />
       <Stack.Screen
+        name="Menu"
+        component={Menu}
+        options={{headerShown: false}}
+      /> 
+      <Stack.Screen
         name="Female"
         component={Female}
         options={{headerShown: false}}
       />
- 
-     
+    
     </Stack.Navigator>
   );
 };

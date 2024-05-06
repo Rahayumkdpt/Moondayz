@@ -1,11 +1,14 @@
-import { StyleSheet, Text, View, Image } from 'react-native';
+import { StyleSheet, Text, View} from 'react-native';
 import React, { useEffect } from 'react';
-import Cewek from '../../assets/icon/Cewek.jpg';
+import Cewek from '../../assets/icon/Cewek.svg';
 
 const SplashScreen = ({ navigation }) => {
+  useEffect(() => {
+    setTimeout(() => navigation.replace('Menu'), 50000);
+  }, []);
   return (
     <View style={styles.container}>
-      <Image source={Cewek} style={styles.image} />
+      <Cewek/>
       <Text style={styles.text}>MOONDAYZ</Text>
     </View>
   );
@@ -25,10 +28,5 @@ const styles = StyleSheet.create({
     fontFamily: 'Poppins-Medium',
     fontWeight: 'bold', 
     color: '#000000', 
-  },
-  image: {
-    width: 400,
-    height: 400,
-    resizeMode: 'contain',
   },
 });
