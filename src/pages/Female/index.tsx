@@ -10,7 +10,7 @@ const Female = ({ navigation }) => {
     </View>
   );
 };
-
+ 
 export default Female;
 
 const styles = StyleSheet.create({

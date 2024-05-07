@@ -16,7 +16,7 @@ const Menu = ({ navigation }) => {
     </View>
   );
 };
-
+ 
 export default Menu;
 
 const styles = StyleSheet.create({
